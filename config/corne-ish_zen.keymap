@@ -24,6 +24,7 @@
 #define SYM  1
 #define NUM  2
 #define HYP  3
+#define MIRROR 4
 
 // Hyper key macro (Ctrl+Alt+Gui+Shift)
 #define HYPER(key) LC(LA(LG(LS(key))))
@@ -106,7 +107,7 @@
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &hm LCTRL A &hm LALT S  &hm LGUI D  &hm LSHFT F &kp G           &kp H       &hm RSHFT J &hm RGUI K  &hm RALT L  &hm RCTRL SQT
                 &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp CAPS
-                                        &none       &mo HYP     &lt_spc SYM SPACE    &mo NUM     &mo HYP     &none
+                                        &none       &mo HYP     &lt_spc SYM SPACE    &mo NUM     &mo MIRROR  &none
             >;
         };
 
@@ -137,6 +138,16 @@
                 &kp HYPER(W) &kp HYPER(C) &kp HYPER(D) &trans       &trans         &trans      &trans      &trans      &trans      &trans
                 &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &trans      &trans      &trans      &trans      &trans
                                           &trans       &trans       &bootloader    &bootloader &trans      &trans
+            >;
+        };
+
+        mirror_layer {
+            label = "MIR";
+            bindings = <
+                &trans      &trans      &trans      &trans      &trans          &kp T       &kp R       &kp E       &kp W       &kp Q
+                &trans      &trans      &trans      &trans      &trans          &kp G       &kp F       &kp D       &kp S       &kp A
+                &trans      &trans      &trans      &trans      &trans          &kp B       &kp V       &kp C       &kp X       &kp Z
+                                        &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
     };
