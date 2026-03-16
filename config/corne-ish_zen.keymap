@@ -26,6 +26,7 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <0>;
@@ -35,6 +36,7 @@
 
         lt_spc: layer_tap_space {
             compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_SPACE";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <0>;
