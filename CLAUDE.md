@@ -1,3 +1,7 @@
+## Layout Changes
+
+When making any keymap or layout changes, always update the README to reflect the new layout.
+
 ## Building Firmware
 
 After making keymap changes:
